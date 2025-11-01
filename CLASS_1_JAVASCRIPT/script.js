@@ -93,6 +93,10 @@ function Multiply(a, b){
 
 }
 
+// const Mulitply = (a,b) => a*b
+
+
+
 
 const myNum = Multiply(100, 200)
 
