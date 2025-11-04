@@ -118,10 +118,74 @@
 // Greet('Joshua')
 
 
-const input = document.querySelector('#input')
-const addBtn = document.querySelector('#addBtn')
-const decreaseBtn = document.querySelector("#decreaseBtn")
+
+function Add(x,y,e){
+  console.log (x + y + e)
+
+}
+
+Add (20,50,30)
+
+Add (10, 0, 5)
 
 
-input.textContent = 0
+Add ( 10,5,3)
 
+
+function  Greetings (name, age, gender) {
+  console.log (`Welcome ${name}!  You're ${gender},  ${age} years old. `)
+}
+
+
+Greetings('Yusuff', 10 , 'Male')
+Greetings('Tope', 11 , 'Female')
+
+
+// function CalculateArea(length, width) {
+//     console.log(length * width)
+// }
+
+
+
+// CalculateArea(100,70)
+// CalculateArea(50,20)
+
+
+
+const CalculateArea = (length, width) => console.log(length * width)
+
+CalculateArea(20, 15)
+CalculateArea(70, 5)
+
+// Create a function called isEven that takes a number and returns "Even" if divisible by 2, otherwise "Odd".
+
+function isEven (num) {
+   if(num%2===0) {
+    console.log(num + ' is even')
+   } else {
+     console.log(num + ' is odd')
+   }
+}
+
+
+isEven (10000099)
+isEven (524828)
+isEven (1)
+isEven (30)
+
+
+// Objects
+// dot notation
+// bracket notation
+
+const person = {
+    name: 'Yusuff',
+    age: 10,
+    gender: 'Male',
+    isSingle: false
+}
+
+console.log(person.name)
+
+
+console.log (person['age'])
