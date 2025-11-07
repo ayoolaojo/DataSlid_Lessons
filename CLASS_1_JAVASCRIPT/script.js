@@ -189,3 +189,118 @@ console.log(person.name)
 
 
 console.log (person['age'])
+
+
+
+const ourNames = ['Ayoola', 'Yusuff', 'Temitope', 'Adams', 'Francis','Timi' ]
+
+console.log(ourNames)
+
+
+const secondName = ourNames[1]
+console.log(secondName)
+
+const subjects = []
+
+subjects[2] = 'English'
+subjects[1] = 'Maths'
+subjects[3] = 'Chemistry'
+subjects[0] = 'Biology'
+
+console.log(subjects)
+
+
+
+const movies = [
+  'spiderman',
+  'Avengers',
+  'Angry Birds',
+  'Iron man',
+  'Superman',
+  'Batman'
+]
+
+movies[1] = 'Jennifer'
+
+console.log(movies)
+
+
+const ourProfiles = [
+  {
+    name: 'Yusuff',
+    age: 10,
+    gender: 'Male'
+  
+  },
+  {
+    name: 'Temitope',
+    age: 11,
+    gender: 'Female'
+  },
+
+]
+
+console.log(ourProfiles[1])  
+console.log(ourProfiles[0].gender)  
+
+
+console.log(typeof(ourProfiles))
+
+
+
+const alphabets = ['a', 'e','o', 'k']
+
+console.log(typeof(alphabets))
+
+
+
+
+
+
+const numm = 10
+// if(numm > 15){
+//   console.log(numm + ' is greater than 15')
+// } else {
+//   console.log(numm + ' is less than 15')
+// }
+// 
+
+numm > 15? console.log('Hurray!'): console.log('Try again') 
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.length)
+console.log(fruits)
+
+fruits.pop()
+
+console.log(fruits)
+
+fruits.push('Pineapple')
+
+console.log(fruits)
+
+fruits.unshift('Watermelon')  
+fruits.unshift(100) 
+
+fruits.shift()
+
+
+console.log(fruits)
+
+fruits.pop()
+console.log(fruits)
+
+console.log(fruits.at(-1))
+console.log(fruits.at(2))
+
+const cars = ['Toyota', 'Lexus', 'BMW', 'hONDA']
+
+const addedArray =  fruits.concat(cars, alphabets)
+
+console.log(addedArray)
+
+
+
+
+
