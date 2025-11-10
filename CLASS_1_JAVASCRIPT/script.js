@@ -296,9 +296,28 @@ console.log(fruits.at(2))
 
 const cars = ['Toyota', 'Lexus', 'BMW', 'hONDA']
 
-const addedArray =  fruits.concat(cars, alphabets)
+const addedArray =  fruits.concat(cars)
 
 console.log(addedArray)
+
+
+// Array Methods Contd
+//  join -  returns  a string
+  //  flat - flatten nested arrays
+  // flatMap
+  // splice - remove or add elements from an array
+  // toSpliced - creates new array while keeping the old array
+  // slice - takes two argument, start and end index
+
+
+  const fishes = ['fish1', 'fish2', 'fish3', 'fish4', 'fish5']
+
+  const newFishes =  [...fishes, 'catfish', 'octopus' ]
+
+
+  console.log (newFishes)
+
+
 
 
 
