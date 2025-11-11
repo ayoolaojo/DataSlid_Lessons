@@ -310,12 +310,90 @@ console.log(addedArray)
   // slice - takes two argument, start and end index
 
 
-  const fishes = ['fish1', 'fish2', 'fish3', 'fish4', 'fish5']
+  // const fishes = ['fish1', 'fish2', 'fish3', 'fish4', 'fish5']
 
-  const newFishes =  [...fishes, 'catfish', 'octopus' ]
+  // const newFishes =  [...fishes, 'catfish', 'octopus' ]
 
 
-  console.log (newFishes)
+  // console.log (newFishes)
+
+
+
+
+  // const _name = 'Ayoola Johnson'
+
+  // console.log(_name.split(' '))
+
+  const phones = ['samsung', 'iphone', 'Tecno', 'itel', 'infinix']
+
+    console.log(phones)
+   
+
+
+const newPhones = phones.toSpliced(2,2, 'Nokia', 'Huawei')
+console.log(newPhones)
+
+
+const slicedPhones = phones.slice(2,4)
+
+
+
+console.log(slicedPhones)
+
+const randomElements = [
+  'fish', 10, true, ['eba', 'amala'], ['Yusuff', 'Adams']
+]
+
+console.log(randomElements.flat())
+
+
+// write a program  that takes firstname and lastname and returns fullname with first letter of each name capitalized
+
+function Capitalize (firstname,lastname) {
+  console.log(firstname.charAt(0).toUpperCase()
+   + firstname.slice(1).toLowerCase()
+    + ' ' + lastname.charAt(0).toUpperCase() + lastname.slice(1).toLowerCase()
+)
+}
+ 
+
+
+function CapitalizeAll(name) {
+  name = name.split(' ')
+  let capitalizedWords = []
+  for (i = 0; i < name.length; i++) {
+    let word = (name[i].at(0).toUpperCase() + name[i].slice(1).toLowerCase())
+    capitalizedWords.push(word)
+  }
+
+  console.log(capitalizedWords.join(' ') )
+  
+
+}
+
+CapitalizeAll('JOSH SAMUEL DOE')
+
+
+
+
+
+
+
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
