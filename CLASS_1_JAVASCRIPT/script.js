@@ -355,11 +355,23 @@ function Capitalize (firstname,lastname) {
     + ' ' + lastname.charAt(0).toUpperCase() + lastname.slice(1).toLowerCase()
 )
 }
- 
+
+const name5 = '   TIMI dAVID aDAMS'
+const splitNames = name5.trim().split(' ')
+console.log(splitNames)
+ for(i = 0; i < splitNames.length; i++){
+   console.log(
+    splitNames[i].at(0)
+    .toUpperCase()
+    
+    + splitNames[i].slice(1).toLowerCase())
+ }
+
 
 
 function CapitalizeAll(name) {
   name = name.split(' ')
+  
   let capitalizedWords = []
   for (i = 0; i < name.length; i++) {
     let word = (name[i].at(0).toUpperCase() + name[i].slice(1).toLowerCase())
@@ -373,6 +385,31 @@ function CapitalizeAll(name) {
 
 CapitalizeAll('JOSH SAMUEL DOE')
 
+CapitalizeAll( 'john smith your MediaSourceHandle')
+
+
+const counter = document.querySelector('#counter')
+const addBtn = document.querySelector('#addBtn')
+const decreaseBtn = document.querySelector('.decreaseBtn')
+
+
+addBtn.addEventListener('click', () => {
+    counter.innerText ++
+})
+
+decreaseBtn.addEventListener('click', () => {
+     if (Number(counter.innerText) < 0) {
+        counter.style.color = 'red'
+    } else if (Number(counter.innerText) > 0) {
+        counter.style.color = 'green'
+    } else {
+        counter.style.color = 'black'
+    }
+
+    
+    counter.innerText --
+    
+})
 
 
 
