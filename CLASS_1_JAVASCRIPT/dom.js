@@ -32,6 +32,14 @@ button2.addEventListener('mouseover', ()=> {
      heading.style.color = 'red'
 } ) 
 
+const newPara =  document.createElement('p')
+ newPara.innerText = 'newly created paragraph'
+
+
+ document.body.appendChild(newPara)
+ document.body.removeChild(button1)
+
+ 
 
 
 
