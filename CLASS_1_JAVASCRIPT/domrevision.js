@@ -65,5 +65,40 @@ decreaseBtn.addEventListener('click', ()=> {
 
 
  
+const userInput = document.getElementById('userInput')
 
+const addButton = document.getElementById('addBtn')
 
+const deleteButton = document.getElementById('deleteBtn')
+
+const output = document.getElementById('output')
+
+ addBtn.addEventListener('click', ()=> {
+     if(userInput.value.trim()){
+         let li = document.createElement('li')
+        li.innerText = userInput.value
+        output.appendChild(li)
+        userInput.value = ''
+     }
+
+   
+
+ }) 
+ 
+ deleteButton.addEventListener ('click', ()=> {
+      let li = document.querySelectorAll('li')
+       output.removeChild(li[li.length -1])
+ })
+
+ const box = document.querySelector('.box');
+ const colorInput =  document.getElementById('colorInput');
+
+ const colorBtn =  document.getElementById('handleColor')
+
+ colorBtn.addEventListener('click', ()=> {
+    if(colorInput.value.trim()){
+        box.style.backgroundColor = colorInput.value
+
+        colorInput.value = ''
+    } 
+ })
