@@ -125,6 +125,8 @@ const names = ['Femi','Ola','Yemi' ]
 
 //   7. Reverse a string
 
+// find the longest word in  a sentence
+
 // reverse("cat") → "tac"
 
 // 15. Count vowels in a string
@@ -134,6 +136,64 @@ const names = ['Femi','Ola','Yemi' ]
 // Return all even numbers from an array
 
 // evenNumbers([1,2,3,4,5]) → [2,4]
+
+
+function longestWord (sentence) {
+
+  let words = sentence.split(' ')
+  let longest = ''
+   for(_word of words) {
+      console.log(_word)
+    if(_word.length > longest.length) {
+      longest = _word
+    }
+    console.log(longest)
+   }
+
+
+}
+
+
+
+longestWord('Hello Chhetah pencils are expensive')
+
+
+const reverseWord = (word) => {
+   console.log(word.split('').reverse().join('')) 
+     
+}
+
+
+reverseWord('elephant')
+reverseWord('hungry')
+reverseWord('Nigeria')
+
+
+
+
+
+// const stWord  = 'efghij'
+
+// for(let i = 0; i < stWord.length; i++) {
+//   console.log(stWord[i])
+// }
+
+// for(let i = stWord.length - 1; i >= 0; i--) {
+//   console.log(stWord[i])
+// }
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
 
 
 
